@@ -1,3 +1,3 @@
 # SNMZ
-#Need it, Want it, Get it
+# Need it, Want it, Get it
 An online shopping store 
