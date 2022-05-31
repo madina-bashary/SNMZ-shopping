@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0px;
+  font-family: "Josefin Sans", arial, sans-serif;
+}
+
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ body {
+   overflow-x: hidden;
+ }
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1111;
+}
+.nav-container {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  background-color: #f7f0e8;
+  border-bottom: 2px solid rgba(14, 17, 85, 0.3);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 3.83px 0.17 rgba(14, 17, 85, 0.1);
+  -moz-box-shadow: 0px 1px 3.83px 0.17px rgba(14, 17, 85, 0.1);
+  -webkit-box-shadow: 0px 1px 3.83px 0.17px rgba(14, 17, 85, 0.1);
+  -o-box-shadow: 0px 1px 3.83px 0.17px rgba(14, 17, 85, 0.1);
+  -ms-box-shadow: 0px 1px 3.83px 0.17px rgba(14, 17, 85, 0.1);
+}
+
+#logo {
+  width: 150px;
+  text-align: center;
+}
+#logo h1 {
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+#logo a {
+  text-decoration: none;
+  color: #1F4594;
+}
+#logo p {
+  font-size: 70%;
+  color: #1F4594;
+}
+
+.nav-list {
+  display: flex;
+  margin: 0 20px;
+}
+
+.nav-list li{
+  list-style: none;
+  position: relative;
+}
+
+.nav-list a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  transition: color 650ms;
+}
+
+.sub-menu {
+  width: 780px;
+  height: 400px;
+  /* text-align: center; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: fixed;
+  background-color: #f7f0e8;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 400ms ease;  
+}
+.sub-menu li{
+  border-top: 1px solid #1F4594;
+  margin: 0 40px;
+  padding: 0 20px;
+}
+.sub-menu li:last-child{
+  border-bottom: 1px solid #1F4594;
+}
+.sub-menu li a {
+  float: left;
+}
+.sub-menu li i {
+  float: right;
+}
+.nav-list li:hover > .sub-menu {
+  margin-top: 20px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-box input[type=text] {
+  width: 270px;
+  padding: 8px;
+  border: 1px solid #0c1442;
+  border-radius: 5px;
+  background-color: #fff;;
+}
+
+.header-search-box {
+  margin: 0 80px 0 250px;
+}
+.search-box::after {
+  background-color: #fff;
+}
+
+.search-button {
+  position: relative;
+  right: 40px;
+  padding: 7px;
+  color: #0c1442;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.profile-image {
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/signup-image3.jpg");
+  background-size: cover;
+  border: 1px solid #ccc;;
+  border-radius: 100%;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.banner {
+  position: relative;
+  top: 80px;
+  margin-bottom: 120px;
+  width: 100%;
+  height: 350px;
+  background-color: #f7f0e8;
+}
+
+.banner-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.banner-container .title {
+  font-size: 20px;
+  padding-bottom: 30px;;
+}
+.banner-container .title p {
+  font-size: 16px;
+}
+.banner-container h2 {
+  margin-bottom: 10px;
+}
+#tagline-image {
+  padding: 10px;
+  align-items: center;
+  height: 350px;
+  width: 50%;
+}
+#tagline-image img {
+  position: relative;
+  top: 20%;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+#tagline-image img.box {
+  width: 50px;
+  height: 50px;
+}
+
+.best-sales {
+  width: 550px;
+  margin: 0 auto;
+}
+
+.best-sales h3 {
+  font-size: 24px;
+  margin: 60px 0 20px 0;
+  text-align: center;
+}
+.best-sales img {
+  width: 48%;
+  margin-right: 10px;
+}
+.best-sold-item {
+  display: flex;
+  background-color: #f7f0e8;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    background-color: #f7f0e8;
+    z-index: 1000;
+  }
+  .sub-menu {
+    position: initial;
+    max-height: 0;
+  }
+  .sub-menu::before {
+    display: none;
+  }
+
+  .nav-list li:hover > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    max-height: initial;
+  }
+  .menu-icons {
+    display: block;
+  }
+  .close {
+    display: none;
+  }
+  nav.active .close {
+    display: block;
+  }
+
+  nav.active .menu {
+    display: none;
+  }
+  nav.active .nav-list {
+    display: flex;
+  }
+
+}
