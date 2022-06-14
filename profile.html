@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="bootstrap_4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+	<script src="jquery.js"></script>
+	<script src="all.min.js"></script>
+    <script src="bootstrap_4/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="SNMZ_photos/logo.png" type="image/x-icon">
+    <title>Categories</title>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="padding: 0 30px; margin: 0; background-color: #f7f0e8">
+		<button class="navbar-toggler" id="nav-btn" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon">   
+               
+            </span>
+        </button>
+        <a class="navbar-brand" href="#" style="height: 80px; margin: 0;">
+            <img src="SNMZ_photos/logo.png" style="height: 80px; padding: 0; margin: 0;">
+        </a>
+        
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<div class="mr-auto">
+				<ul class="navbar-nav" style="margin: 0 20px; font-size: 115%;">
+					<li class="nav-item">
+					<a class="nav-link" href="index.html" id="nav-style">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="" class="nav-link" id="nav-style">Catagory <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/category.html">Apparel</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Beauty and Personal Care</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Customers Electronics</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Fashion Accessories</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Food</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Gifts and Crafts</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Home Application</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Home and Garden</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Jeweleries</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Lagguage, Bags and Cases</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Office Supplies</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Network Accessories</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">School Supplies</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Toys and Hobbies</a><i class="fa fa-angle-right pull-left"></i></li>
+                           
+                        </ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" id="nav-style" data-toggle="modal" data-target="#about">About</a>
+					</li> 
+				</ul>
+			</div>
+			<div class="search-box" id="header-search-box" style="margin-right: 20px;">
+				<form action="search.php" method="get">
+					<input type="text" name="search" maxlength="40" placeholder="Search Here..." required>
+					<button type="submit" class="search-button">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</div> 
+        </div>  
+		<button type="button" data-toggle="collapse" data-target="#collapsibleProfile" id="profile">
+            <div class="profile-image">
+                
+            </div>
+        </button>
+        <div id="collapsibleProfile">
+            <div class="profile-content">
+                <ul>
+                    <li><a href="profile.html">Your Profile</a></li>
+                    <li style="border-top: 1px solid #1F4594;"><a href="favorite.html">Favorites <img src="SNMZ_photos/heart_outline.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<div id="about" class="modal">
+        <div  class="modal-dialog modal-dialog-centered modal-lg">
+      	<div class="modal-content">
+          <div class="modal-header">
+              <h4 class="some-style">About</h4>
+              <button class="close" type="button" data-dismiss="modal" style="color: black;">&times;</button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-sm-12 col-md-3" style="text-align: center;"> 
+                      <img src="SNMZ_photos/logo.png" style="margin: 30px; width: 100%; position: relative; top: 30%;">
+                  </div>
+                  <div class="col-md-1" style="border-right: 1px solid black;">
+                  </div>
+                  <div class="modal-contact col-sm-11 col-md-7" style="margin: 20px; margin-left: 20px; text-align: justify;">
+                      <p style="color: black;"><strong>SNMZ</strong> stands for S ‘Sadaf’, N ‘Nazifa’, M ‘Madina’, Z ‘Zainab’. We are a developer team in Balkh University, Computer Science Faculty. SNMZ Team specialized on all Web Development pieces and creating databases. We stick together to bring facilities in people’s life by using technologies in the country. It’s a critical need to use technology in the society, we want to familiarize people with technology by bring technology to their lives. And this is going to be the first step! </p>
+                      <p style="color: black;">
+                            Front-End Developers:  Madina Bashary, Sadaf Nawaby <br>
+                            Back-End Developers:  Nazifa Karimi, Zainab Sadat </br>
+                            Location:  Mazar-i-Sharif, Afghanistan <br>
+                            Email:  snmz.shopping@gmail.com  <br>
+                            Phone:  +93772722000 <br> <br> <br>
+                            <a href="http://www.facebook.com/snmz.shopping"><i class="fab fa-facebook-f"></i></a>
+                            <a href="http://m.me/snmz.shopping"><i class="fab fa-facebook-messenger"></i></a>
+                            <a href="https://www.instagram.com/snmz.shopping"><i class="fab fa-instagram"></i></a>
+                            <a href="http://api.whatsapp.com/send?phone=+93772722000"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://pin.it/2tBBX80"><i class="fab fa-pinterest-p"></i></a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      	</div>
+ 	 </div>
+	</div>
+	<main style="background-color: #f7f0e8; width: 100%; margin-top: 80px;">
+
+		<div class="signup-content">
+			<div class="signup-form">
+				
+				<form method="POST" class="register-form">
+                    <div class="profile-page-image">
+            
+                    </div>
+                    <input type="text" name="firstname" class="form-group" placeholder="First Name" id="firstname" required />
+					<div id="nameError" class="error" style="color: #0c1442;">
+					</div>
+					<input type="text" name="lastname" class="form-group" placeholder="Last Name" id="lastname" required />
+					<div id="lastError" class="error" style="color: #0c1442;">
+					</div>
+					<input type="phone" name="phone" class="form-group" placeholder="Phone Number" id="phone-number" required/>
+					<div id="phoneError" class="error" style="color: #0c1442;">
+					</div>
+					<input type="email" name="email" class="form-group" id="email" placeholder="Email" required/>
+					<div id="emailError" class="error" style="color: #0c1442;">
+					</div>
+					<input type="password" name="pass" class="form-group" placeholder="New Password" id="password" required/>
+					<div id="passError" class="error" style="color: #0c1442;">
+					</div>
+					<input type="password" name="re_pass" class="form-group" placeholder="Confirm password" id="re-password" required/>
+					<div id="re-passError" class="error" style="color: #0c1442;">
+					</div>
+					<select name="choose-city" id="choose-city" class="form-group" required>
+						<option>Choose Your City</option>
+						<option value="af">Kabul</option>
+						<option value="am">Mazar-i-Sharif</option>
+						<option value="au">Herat</option>
+						<option value="tr">Kandahar</option>
+						<option value="br">Kunduz</option>
+						<option value="ch">Baghlan</option>
+						<option value="tr">Banjshir</option>
+						<option value="br">Sheburghan</option>
+						<option value="ch">Parwan</option>
+					</select>
+					<input type="text" name="add" class="form-group" placeholder="Address" id="address" required/>
+					<div id="AddressError" class="error" style="color: #0c1442;">
+					</div>
+					<input type="submit" name="signup" id="signup" class="form-submit" value="Save">
+				</form>
+			</div>
+		</div>
+	</main>
+	<script text="javascript">
+		var nameValid = false;
+		var emailValid = false;
+		var usernameValid = false;
+		var passValid = false;
+		var phoneValid = false;
+		var lastValid = false;
+        var pat = /([a-zA-Z]{3,32})@([a-zA-Z]{4,16}).([a-zA-Z]){2,7}/i;
+		var name_pat = /[A-z]{3,16}/;
+		var user_name_pat = /[A-z0-9]{6,16}/;
+		var new_pat = /[\s| =|@|.|-|+|$|#|!|?|%|^|&|,|/|\|~]/;
+		var phone_pat = new RegExp("07[0246789][0-9]{7}");
+		var pass_pat = /[0-9A-z]{6,16}/;
+		var new_pass = /[=|@|.|-|+|$|#|!|?|%|^|&|,|/|\|~]{1,5}/;
+		var space_check = /\s/;
+
+        $(document).ready(function(){
+				
+            $("#email").blur(function() {
+				var email = $(this).val();
+            if(!pat.test(email)) {
+                $("#emailError").html("Incorrect Email!!!");
+               	emailValid = false;
+            } else  {
+                $("#emailError").html("");
+				emailValid = true;
+			}
+            });
+
+			$("#firstname").blur(function(){
+				var firstname = $(this).val();
+				if(!name_pat.test(firstname)) {
+					$("#nameError").html("Your name must be more than 3 letter and You shouldn't use characters or numbers!!!");
+                	nameValid = false;
+				} else  {
+					$("#nameError").html(" ");
+					nameValid = true;
+				}
+			});
+			$("#lastname").blur(function(){
+				var firstname = $(this).val();
+				if(!name_pat.test(firstname)) {
+					$("#lastError").html("Your lastname must be more than 3 letter and You shouldn't use characters or numbers!!!");
+                	lastValid = false;
+				} else  {
+					$("#lastError").html(" ");
+					lastValid = true;
+				}
+			});
+			
+			$("#phone-number").blur(function(){
+				var phone = $(this).val();
+				if(!phone_pat.test(phone)) {
+					$("#phoneError").html("Please Enter a Valid Number!!!");
+                	phoneValid = false;
+				} else  {
+					$("#phoneError").html(" ");
+					phoneValid = true;
+				}
+			});
+
+			$("#password").keyup(function () { 
+				var password = $(this).val();
+				validatePassword(password); 
+
+			}); 
+
+			function validatePassword(password) {
+				
+				if(!pass_pat.test(password)) {
+					$("#passError").html("Your Password Should Be At Least 6 Letter!!!");
+                	passValid = false;
+				} else if(!new_pass.test(password)) {
+					$("#passError").html("Your Password Should Be At Least 1 Character!!!");
+                	passValid = false;
+				} else  {
+					$("#passError").html(" ");
+					passValid = true;
+				}
+			}
+			$("#re-password").keyup(function () { 
+				var re_password = $(this).val();
+				ConfirmPassword(re_password); 
+
+			}); 
+
+			function ConfirmPassword(password) {
+				var pass = $("#password").val();
+				if(password != pass) {
+					$("#re-passError").html("Password Doesn't Match!!!");
+                	passValid = false;
+				} else  {
+					$("#re-passError").html(" ");
+					passValid = true;
+				}
+			}
+
+			$("#signup").click(function(event) {
+				if(!(nameValid & lastValid & passValid & phoneValid & emailValid)){
+					
+					event.preventDefault();
+				}
+			});
+			$("#profile").click(function(){
+				$("#collapsibleProfile").toggle();
+				
+			});
+        });
+    </script>
+</body>
+</html>

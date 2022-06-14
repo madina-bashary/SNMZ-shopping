@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="bootstrap_4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+	<script src="jquery.js"></script>
+	<script src="all.min.js"></script>
+    <script src="bootstrap_4/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="SNMZ_photos/logo.png" type="image/x-icon">
+    <title>All Your Favorite Is Here</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="padding: 0 30px; margin: 0; background-color: #f7f0e8">
+		<button class="navbar-toggler" id="nav-btn" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon">   
+               
+            </span>
+        </button>
+        <a class="navbar-brand" href="#" style="height: 80px; margin: 0;">
+            <img src="SNMZ_photos/logo.png" style="height: 80px; padding: 0; margin: 0;">
+        </a>
+        
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<div class="mr-auto">
+				<ul class="navbar-nav" style="margin: 0 20px; font-size: 115%;">
+					<li class="nav-item">
+					<a class="nav-link" href="index.html" id="nav-style">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="" class="nav-link" id="nav-style">Catagory <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/category.html">Apparel</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Beauty and Personal Care</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Customers Electronics</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Fashion Accessories</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Food</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Gifts and Crafts</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Home Application</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Home and Garden</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Jeweleries</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Lagguage, Bags and Cases</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Office Supplies</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Network Accessories</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">School Supplies</a><i class="fa fa-angle-right pull-left"></i></li>
+							<li><a href="pages/category.html">Toys and Hobbies</a><i class="fa fa-angle-right pull-left"></i></li>
+                           
+                        </ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" id="nav-style" data-toggle="modal" data-target="#about">About</a>
+					</li> 
+				</ul>
+			</div>
+			<div class="search-box" id="header-search-box" style="margin-right: 20px;">
+				<form action="search.php" method="get">
+					<input type="text" name="search" maxlength="40" placeholder="Search Here..." required>
+					<button type="submit" class="search-button">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</div> 
+        </div>  
+		<button type="button" data-toggle="collapse" data-target="#collapsibleProfile" id="profile">
+            <div class="profile-image">
+                
+            </div>
+        </button>
+        <div id="collapsibleProfile">
+            <div class="profile-content">
+                <ul>
+                    <li><a href="profile.html">Your Profile</a></li>
+                    <li style="border-top: 1px solid #1F4594;"><a href="favorite.html">Favorites <img src="SNMZ_photos/heart_outline.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="about" class="modal">
+        <div  class="modal-dialog modal-dialog-centered modal-lg">
+      	<div class="modal-content">
+          <div class="modal-header">
+              <h4 class="some-style">About</h4>
+              <button class="close" type="button" data-dismiss="modal" style="color: black;">&times;</button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-sm-12 col-md-3" style="text-align: center;"> 
+                      <img src="SNMZ_photos/logo.png" style="margin: 30px; width: 100%; position: relative; top: 30%;">
+                  </div>
+                  <div class="col-md-1" style="border-right: 1px solid black;">
+                  </div>
+                  <div class="modal-contact col-sm-11 col-md-7" style="margin: 20px; margin-left: 20px; text-align: justify;">
+                      <p style="color: black;"><strong>SNMZ</strong> stands for S ‘Sadaf’, N ‘Nazifa’, M ‘Madina’, Z ‘Zainab’. We are a developer team in Balkh University, Computer Science Faculty. SNMZ Team specialized on all Web Development pieces and creating databases. We stick together to bring facilities in people’s life by using technologies in the country. It’s a critical need to use technology in the society, we want to familiarize people with technology by bring technology to their lives. And this is going to be the first step! </p>
+                      <p style="color: black;">
+                            Front-End Developers:  Madina Bashary, Sadaf Nawaby <br>
+                            Back-End Developers:  Nazifa Karimi, Zainab Sadat </br>
+                            Location:  Mazar-i-Sharif, Afghanistan <br>
+                            Email:  snmz.shopping@gmail.com  <br>
+                            Phone:  +93772722000 <br> <br> <br>
+                            <a href="http://www.facebook.com/snmz.shopping"><i class="fab fa-facebook-f"></i></a>
+                            <a href="http://m.me/snmz.shopping"><i class="fab fa-facebook-messenger"></i></a>
+                            <a href="https://www.instagram.com/snmz.shopping"><i class="fab fa-instagram"></i></a>
+                            <a href="http://api.whatsapp.com/send?phone=+93772722000"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://pin.it/2tBBX80"><i class="fab fa-pinterest-p"></i></a>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      	</div>
+ 	 </div>
+	</div>
+	
+    <main>
+        <div class="container" id="category-page-container">
+            <div class="catagory-details">
+                <p><b>Favorite</b> <img src="SNMZ_photos/heart_outline.png"><br>All Your Favorite Is Here...</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                    <div class="category-items card p-4 mb-5">
+                        <div class="card-body">
+                            <img src="SNMZ_photos/category-item-1.webp" alt="Tailoring Tape">
+                            <p>Soft Tape Measure for Body Measurement Sewing Tailor Craft - on Reverse Side 60-inch</p>
+                            <h5 class="item-details">Verified  <i class="fas fa-check"></i></h5>   
+                            <h5 class="item-price">Price: 1000 AF</h5>
+                            <div class="star-widget">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <button class="buy-button-category">Click To Buy >></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                    <div class="category-items card p-4 mb-5">
+                        <div class="card-body">
+                            <img src="SNMZ_photos/category-item-2.jfif" alt="Washable Glue">
+                            <p>Elmer's Disappearing Purple School Glue, Washable, 0.24-ounce sticks</p>
+                            <h5 class="item-details">Verified  <i class="fas fa-check"></i></h5>   
+                            <h5 class="item-price">Price: 1000 AF</h5>
+                            <div class="star-widget">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <button class="buy-button-category">Click To Buy >></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                    <div class="category-items card p-4 mb-5">
+                        <div class="card-body">
+                            <img src="SNMZ_photos/category-item-3.jfif" alt="Scissors">
+                            <p>Scissors, Multipurpose Scissors Sharp Shears, Comfort-Grip Sturdy Scissors for everywhere</p>
+                            <h5 class="item-details">Verified  <i class="fas fa-check"></i></h5>   
+                            <h5 class="item-price">Price: 1000 AF</h5>
+                            <div class="star-widget">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <button class="buy-button-category">Click To Buy >></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                    <div class="category-items card p-4 mb-5">
+                        <div class="card-body">
+                            <img src="SNMZ_photos/category-item-4.webp" alt="Colored Pens">
+                            <p>iBayam Journal Planner Pens Colored Bullet Journaling Writing Note Taking Calender Coloring...</p>
+                            <h5 class="item-details">Verified  <i class="fas fa-check"></i></h5>   
+                            <h5 class="item-price">Price: 1000 AF</h5>
+                            <div class="star-widget">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <button class="buy-button-category">Click To Buy >></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 rounded">
+                    <div class="category-items card p-4 mb-5">
+                        <div class="card-body">
+                            <img src="SNMZ_photos/category-item-5.jpg" alt="Paper Tape">
+                            <p>YRYM HT Clear Vinyl Transfer Paper Tape Roll-12 x 50 FT w/ Allignment Grid Application Tape...</p>
+                            <h5 class="item-details">Verified  <i class="fas fa-check"></i></h5>
+                            <h5 class="item-price">Price: 1000 AF</h5>
+                            <div class="star-widget">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <button class="buy-button-category">Click To Buy >></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="show-more-results-btn">Show All Results</button>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer style="background-color: #0c1442; margin: 0; padding: 0;" class="container-fluid">
+        <div class="map" style="padding: 0;">
+            <iframe src="https://maps.google.com/?cid=13535520773696608911&entry=gps" frameborder="0" 
+            style="border:0px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="footer-container" style="padding: 20px;">
+            <div class="row contact-us" style=" color: white; padding-top: 10px; width: 80%; margin: 0 auto;">
+                <div class="our-location col-sm-12 col-lg-4 col-md-12 d-flex">
+                    <div>
+                        <img src="SNMZ_photos/location.png" alt="" style="margin-top: 6px;">
+                    </div>
+                    <div>
+                        <h5>Our Address</h5>
+                        <p>Mazar-i-Sharif, Afghanistan</p>
+                    </div>
+                </div>
+    
+                <div class="call-us col-sm-12 col-lg-4 col-md-12 d-flex">
+                    <div>
+                        <img src="SNMZ_photos/call.png" alt="">
+                    </div>
+                    <div>
+                        <a href="tel:+93772722000">Call Us: 0783430712</a><br>
+                        <a href="tel:+93772722000">Call Us: 0745535079</a>
+                    </div>   
+                </div>
+                <div class="email-us col-sm-12 col-lg-4 col-md-12 d-flex">
+                    <div>
+                        <img src="SNMZ_photos/email.png" alt="" style="margin-top: 10px;">
+                    </div>
+                    <div>
+                        <h5>Email Us At:</h5>
+                        <a href="mailto: snmz.shopping@gmail.com">snmz.shopping@gmail.com</a><br>
+                    </div> 
+                </div>
+            </div>
+
+            <hr style="border-bottom: 1px solid white;">
+    
+            <div class="row social-links" style="text-align: center;">
+                <div class="col-sm-12 col-md-12">
+                    <a href="http://www.facebook.com/snmz.shopping"><img src="SNMZ_photos/facebook.png" alt=""></a>
+                    <a href="http://m.me/snmz.shopping"><img src="SNMZ_photos/messager.png" alt=""></a>
+                    <a href="https://www.instagram.com/snmz.shopping"><img src="SNMZ_photos/instagram.png" alt=""></a>
+                    <a href="http://api.whatsapp.com/send?phone=+93772722000"><img src="SNMZ_photos/whatsapp.png" alt=""></a>
+                    <a href="https://pin.it/2tBBX80"><img src="SNMZ_photos/pinterest.png" alt=""></a>
+                </div>
+            </div>
+
+            <hr style="border-bottom: 1px solid white;">
+
+            <div class="row" style="text-align: center;">
+                <div class="col-sm-12 col-md-12">
+                <p style="color: white;">&copy; 2022 All Copyrights Reserved To <b>SNMZ</b> Team</p>
+                </div>
+            </div>
+           
+        </div>
+    </footer>
+
+    <script>
+		$(document).ready(function(){
+			$("#profile").click(function(){
+				$("#collapsibleProfile").toggle();
+				
+			})
+		});
+   </script>
+</body>
+</html>
